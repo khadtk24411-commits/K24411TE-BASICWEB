@@ -1,0 +1,37 @@
+div.anh1{
+    width:30%;
+    float:right;
+    margin:0 0 0 5px;
+}
+
+div.anh2{
+    width:20%;
+    float:left;
+    margin:0 5px 0 0;
+}
+frameset{
+    border:0px;
+}
+body{
+   
+    background: rgb(249, 196, 155);
+}
+div.logo, div.a{
+    text-align:center;
+    
+}
+body.ab{
+    background:rgb(162, 232, 162);
+}
+h1,h3,h4{
+    color:rgb(196, 116, 196);
+}
+div.logo{
+    padding: 0.5em;  
+    border:solid 3px rgb(129, 127, 123);
+    border-width: 5px;  
+    background-color: rgb(255, 240, 211); 
+    width: 70%; 
+     margin: 0 auto;
+   
+}
