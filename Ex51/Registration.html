@@ -1,0 +1,48 @@
+
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Tiêu đề trang</title>
+    <style type="text/css">
+        div.anh, div.foot{
+            text-align: center;
+        }
+        form{
+            width: 550px;
+            height: 570px;
+            background-color: rgb(34, 153, 147);
+            margin: auto;
+            border: 2px solid blue;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <div class="anh">
+            <img src="images/Logo.gif" alt="">
+        </div>
+        <p><label for="Date">Date:</label> <input type="date" name="Date" id="Date" style="width: 150px;"></p>
+        <p><label for="firtsname">1&rpar; Infant's first name:</label> <input type="text" name="firtsname" id="firtsname"> <label for="Last"> Last:</label> <input type="text" name="Last" id="Last"></p>
+        <p><label for="record">2&rpar; Medical Record #:</label> <input type="text" name="record" id="record" style="width: 120px;"></p>
+        <p><label for="birth">3&rpar; Date of birth: </label><input type="date" name="birth" id="birth"style="width: 150px;"></p>
+        <p><label for="weight">4&rpar; Birth weight:</label> <input type="text" name="weight" id="weight" style="width: 120px;"></p>
+        <p><label for="score">5&rpar; APGAR score: </label><input type="text" name="score" id="score"style="width: 70px;"></p>
+        <p><label for="mfirtsname">6&rpar; Mother's first name:</label> <input type="text" name="mfirtsname" id="mfirtsname"> <label for="mLast"> Last:</label> <input type="text" name="mLast" id="mLast"></p>
+        <p><label for="ffirtsname">7&rpar; Father's first name:</label> <input type="text" name="ffirtsname" id="ffirtsname"> <label for="fLast"> Last:</label> <input type="text" name="fLast" id="fLast"></p>
+        <p>8&rpar; Physician (check all that apply):
+            <select  name="Physician" size="4" id="Physician"
+                    style="width:180px; vertical-align:top;">
+                <option value="albert">Dr: Warren Albert</option>
+                <option value="alvaez">Dr: Maria Alvarez</option>
+                <option value="brinkman">Dr: Karen Brinkman</option>
+                <option value="kerr">Dr: Michael Kerr</option>
+            </select>
+        </p>
+        <div class="foot">
+            <button type="submit">Register</button>
+            <button type="reset">cancel</button>
+        </div>
+    </form>
+
+</body>
+</html>
