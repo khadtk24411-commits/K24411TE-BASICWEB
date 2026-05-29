@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Xử lý đăng nhập</title>
+
+</head>
+<body>
+        <h2>Data of Contact Page</h2>
+        <p><b>Fullname</b>: <span id="fullname"></span></p>
+        <p><b>Email</b>: <span id="email"></span></p>
+        <p><b>Send to</b>: <span id="send"></span></p>
+        <p><b>Title</b>: <span id="Title"></span></p>
+        <p><b>Content</b>: <span id="Content"></span></p>
+        <script>
+            let url = new URL(window.location.href);
+            let Fullname = url.searchParams.get("Fullname");
+            let Email = url.searchParams.get("Email");
+            let Send = url.searchParams.get("send");
+            let Title = url.searchParams.get("Title");
+            let Content = url.searchParams.get("Content");
+            document.getElementById("fullname").innerHTML = Fullname;
+            document.getElementById("email").innerHTML = Email;
+            document.getElementById("send").innerHTML = Send;
+            document.getElementById("Title").innerHTML = Title;
+            document.getElementById("Content").innerHTML = Content;
+        </script>
+</body>
+</html>
+</body>
+</html>
