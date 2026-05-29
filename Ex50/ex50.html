@@ -1,0 +1,91 @@
+
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Tiêu đề trang</title>
+    <style type="text/css">
+        div.anh{
+            text-align: center;
+        }
+        form{
+            align-items: center;
+            border: 2px solid blue;
+            width: 650px;
+             margin: auto;
+            background-color: rgb(203, 255, 255);
+        }
+        h2,p,table,hr, button{
+            margin-left: 20px;
+            margin-right: 20px;
+            
+        }
+        table,tr,td,th{
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <form name="DeLong">
+        <div class="anh">
+            <img src="images/DeLong.jpg" alt="">
+        </div>
+        <h2>Travel Expense Report</h2>
+        <hr>
+        <p>1&rpar; <label for="Firstname">First Name:</label> <input type="text" name="Firstname" id="Firstname"><label for="LastName">Last Name:</label> <input type="text" name="LastName" id="LastName"></p>
+        <p>2&rpar; <label for="Social">Social Security Number:</label> <input type="text" name="Social" id="Social" style="width: 80px;"></p>
+        <p>3&rpar; Department: 
+            <select name="department" id="department">
+                <option value="Acc" style="width: 70px;">Accounting</option>
+            </select>
+        </p>
+        <p><label for="Purpose">4&rpar; Decribe the purpose of your trip.</label> <br>
+            <input type="text" name="Purpose" id="Purpose" style="width: 500px; height: 100px; margin-left: 10px;"></p>
+        <p>5&rpar; Itemize your travel expenses</p>
+        <table>
+            <tr>
+                <th><label for="ngay">Date</label></th>
+                <th><label for="des">Description</label></th>
+                <th>Category</th>
+                <th><label for="Amount">Amount</label></th>
+            </tr>
+            <tr>
+                <td><input type="date" name="ngay1" id="ngay"></td>
+                <td><input type="text" name="des1" id="des" style="width: 180px;"></td>
+                <td><select name="Category1" id="Category" style="width: 100px;">
+                    <option value="Meal1">Meal</option>
+                </select></td>
+                <td><input type="number" name="Amount1" id="Amount" style="width: 60px;"></td>
+            </tr>
+            <tr>
+                <td><input type="date" name="ngay2" id="ngay"></td>
+                <td><input type="text" name="des2" id="des" style="width: 180px;"></td>
+                <td><select name="Category2" id="Category" style="width: 100px;">
+                    <option value="Meal2">Meal</option>
+                </select></td>
+                <td><input type="number" name="Amount2" id="Amount" style="width: 60px;"></td>
+            </tr>
+            <tr>
+                <td><input type="date" name="ngay3" id="ngay"></td>
+                <td><input type="text" name="des3" id="des" style="width: 180px;"></td>
+                <td><select name="Category3" id="Category" style="width: 100px;">
+                    <option value="Meal3">Meal</option>
+                </select></td>
+                <td><input type="number" name="Amount3" id="Amount" style="width: 60px;"></td>
+            </tr>
+            <tr>
+                <td><input type="date" name="ngay4" id="ngay"></td>
+                <td><input type="text" name="des4" id="des" style="width: 180px;"></td>
+                <td><select name="Category4" id="Category" style="width: 100px;">
+                    <option value="Meal4">Meal</option>
+                </select></td>
+                <td><input type="number" name="Amount4" id="Amount" style="width: 60px;"></td>
+            </tr>
+        </table>
+        <p><label for="Yes">6&rpar; Have you submitted your receipts? </label><input type="radio" name="Yes" value="No" id="Yes">Yes <input type="radio" name="Yes" value="No" id="Yes"></p>
+        <button type="submit" onclick="alert('Submit successful'); return false;">Submit travel expenses</button>
+        <button type="reset">Reset</button>
+        <p>Question? Contact Debbie Larson in Accouting &lpar;ext. 2150&rpar;</p>
+    </form>
+
+</body>
+</html>
