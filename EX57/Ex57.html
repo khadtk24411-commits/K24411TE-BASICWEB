@@ -1,0 +1,77 @@
+
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Tiêu đề trang</title>
+    <script>
+        function sum(){
+            a = eval(P1.innerText.replace("$", ""));
+            c = eval(P2.innerText.replace("$", ""));
+            e = eval(P3.innerText.replace("$", ""));
+
+            if (isNaN(a) || isNaN(c) || isNaN(e)) {
+                alert("Có giá sản phẩm không hợp lệ");
+                return;
+            }
+            else{
+                b = eval(myform.Qty1.value);
+                d = eval(myform.Qty2.value);
+                f = eval(myform.Qty3.value);
+                myform.total.value = (a * b) + (c * d) + (e * f)
+            }
+            
+            
+        }
+    </script>
+</head>
+<body>
+    <form name="myform" style="border: 2px solid black; margin: auto; width: 600px;">
+        <table>
+            <tr>
+                <th>Part Number</th>
+                <th>Descriptionr</th>
+                <th>Price</th>
+                <th><label for="Qty">Qty</label></th>
+                <th><label for="IT">Item table</label></th>
+            </tr>
+            <tr>
+                <td>C112</td>
+                <td>Mouse</td>
+                <td id="P1">19.95$</td>
+                <td><input type="number" name="Qty1" id="Qty1"></td>
+                <td><input type="text" name="IT1" id="IT"></td>
+            </tr> 
+            <tr>
+                <td>B124</td>
+                <td >Keyboard US</td>
+                <td id="P2">29.95$</td>
+                <td><input type="number" name="Qty2" id="Qty2"></td>
+                <td><input type="text" name="IT2" id="IT"></td>
+            </tr>
+             <tr>
+                <td>U125</td>
+                <td>USB KingMax</td>
+                <td id="P3">39.95$</td>
+                <td><input type="number" name="Qty3" id="Qty3"></td>
+                <td><input type="text" name="IT3" id="IT"></td>
+            </tr>
+            <tr>
+                <td colspan="5"><hr></td>
+            </tr>
+                <tr>
+                    <td colspan="5" style="text-align: right;">
+                       Total: <input type="text" name="total" id="total">   
+                    </td> 
+                </tr>
+                <tr>
+                    <td  colspan="5" style="text-align: right;">
+                        <button type="button" onclick="sum()" style="background-color: orange; color: white;">Sum</button>
+                        
+                    </td>
+                </tr>
+
+        </table>
+    </form>
+
+</body>
+</html>
