@@ -1,0 +1,78 @@
+
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Tiêu đề trang</title>
+    <script>
+        function MAX(){
+            var a= eval(myform.a.value)
+            var b=eval(myform.b.value)
+            var c=eval(myform.c.value)
+             myform.ketqua.value=Math.max(a,b,c)
+        }
+        function MIN(){
+            var a= eval(myform.a.value)
+            var b=eval(myform.b.value)
+            var c=eval(myform.c.value)
+            myform.ketqua.value=Math.min(a,b,c)
+           
+        }
+         function sina(){
+            var a= eval(myform.a.value)
+            var b=eval(myform.b.value)
+            var c=eval(myform.c.value)
+            myform.ketqua.value=Math.sin(a)
+        }
+         function cosa(){
+            var a= eval(myform.a.value)
+            var b=eval(myform.b.value)
+            var c=eval(myform.c.value)
+            myform.ketqua.value=Math.cos(a)
+        }
+
+         function ab(){
+            var a= eval(myform.a.value)
+            var b=eval(myform.b.value)
+            var c=eval(myform.c.value)
+            myform.ketqua.value= a**b
+        }
+    </script>
+</head>
+<body>
+    <form name="myform">
+    <table border="1">
+        <tr>
+            <td>a: </td>
+            <td><input type="number" name="a" ></td>
+            
+        </tr> 
+        <tr>
+            <td>b:</td>
+            <td><input type="number" name="b" ></td>
+           
+        </tr>
+        <tr>
+            <td>c: </td>
+            <td><input type="number" name="c" ></td>
+            
+        </tr>
+        <tr>
+            <td>Result:</td>
+            <td><input type="number" id="ketqua"></td>
+          
+        </tr>
+        <tr>
+            <td colspan="2">
+                <button type="button" onclick="MAX()">MAX</button>
+                <button type="button" onclick="MIN()">MIN</button>
+                <button type="button" onclick="sina()">&lpar;Sin a&rpar;</button>
+                <button type="button" onclick="cosa()">&lpar;Cos a&rpar;</button>
+                <button type="button" onclick="ab()">a^b</button>
+            </td>
+        </tr>
+
+    </table>
+    </form>
+
+</body>
+</html>
