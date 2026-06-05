@@ -1,0 +1,64 @@
+
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Tiêu đề trang</title>
+    <script>
+        function PTB2(){
+            var a= eval(myform.a.value)
+            var b=eval(myform.b.value)
+            var c=eval(myform.c.value)
+            delta = b**2-4*a*c
+            if(delta<0){
+                myform.ketqua.value="Phương trình vô nghiệm"
+            }
+            else if (delta==0){
+                 myform.ketqua.value= "x1 = x2 "+ "= "+-b/(2*a)
+            }
+            else{
+                myform.ketqua.value= "x1 = "+ (-b+Math.sqrt(delta))/(2*a) +"; x2 = " +  (-b-Math.sqrt(delta))/(2*a)
+            }
+
+        }
+    </script>
+</head>
+<body>
+    <form name="myform">
+    <table border="1" style="width: 40%;">
+        <tr>
+            <td colspan="2" style="background-color: rgb(195, 255, 235);  text-align: center;">
+                The quadratic equation:
+            </td>
+        </tr>
+        <tr>
+            <td>a: </td>
+            <td><input type="number" name="a" style="width: 100%;"></td>
+            
+        </tr> 
+        <tr>
+            <td>b:</td>
+            <td><input type="number" name="b" style="width: 100%;"></td>
+           
+        </tr>
+        <tr>
+            <td>c: </td>
+            <td><input type="number" name="c" style="width: 100%;"></td>
+            
+        </tr>
+        <tr>
+            <td>Result:</td>
+            <td><input type="text" id="ketqua" style="width: 100%;"></td>
+          
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <button type="button" onclick="PTB2()" style="background-color: lightgray; border: 1px solid orange;">Find solution</button>
+                <button type="reset" style="background-color: lightgray; border: 1px solid orange;">Clear</button>
+            </td>
+        </tr>
+    </table>
+    </form>
+
+</body>
+</html>
