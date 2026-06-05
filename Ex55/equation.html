@@ -8,6 +8,10 @@
             var a= eval(myform.a.value)
             var b=eval(myform.b.value)
             var c=eval(myform.c.value)
+            if(a==0 && b!=0){
+                  myform.ketqua.value=-c/b
+            }
+            else{
             delta = b**2-4*a*c
             if(delta<0){
                 myform.ketqua.value="Phương trình vô nghiệm"
@@ -18,6 +22,8 @@
             else{
                 myform.ketqua.value= "x1 = "+ (-b+Math.sqrt(delta))/(2*a) +"; x2 = " +  (-b-Math.sqrt(delta))/(2*a)
             }
+            }
+
 
         }
     </script>
