@@ -1,0 +1,41 @@
+
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Tiêu đề trang</title>
+    <script src="js/main.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <form name="myform">
+        <div class="div_content">
+            <p>
+                <button type="button" onclick="addnode()">Add Node</button>
+                Content <input type="text" name="content" id="content">
+                 <span >Position <input type="text" name="position" id="position"></span>
+            </p>
+            <p>
+                <button type="button" onclick="removenode()">Remove Node</button>
+                <span >Position <input type="text" name="position1" id="position1"></span>
+            </p>
+            <p>
+                <button type="button" onclick="modifynode()">Modify Node</button>
+                 New Content <input type="text" name="newcontent" id="newcontent">
+                <span>Position <input type="text" name="position2" id="position2"></span> 
+            </p>
+        </div>
+        <p>
+            Web Node
+        </p>
+        <div id="webnode">
+            <ul type="disc" >
+                <li>Data base</li>
+                <li>Web1</li>
+                <li>Web2</li>
+            </ul>
+        </div>
+
+    </form>
+
+</body>
+</html>
