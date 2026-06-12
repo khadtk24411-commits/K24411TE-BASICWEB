@@ -1,0 +1,73 @@
+
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Tiêu đề trang</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/mainjs.js"></script>
+</head>
+<body>
+    <form name="myform">
+    <h1>Member Registration</h1>
+    <hr>
+    <p>Name(*) <input type="text" name="name" id="name"></p>
+    <p>Birthday(*) Day:<Select name="birthday_day" id="birthday_day"></Select>Month:
+                <Select name="birthday_month" id="birthday_month"></Select>
+                 Year:<Select name="birthday_year" id="birthday_year"></Select></p>
+    <p>Gender(*):
+        <input type="radio" name="gender" id="man" value="Man" checked>
+        <label for="man">Man</label>
+        <input type="radio" name="gender" id="woman" value="Woman">
+        <label for="woman">Woman</label>
+    </p>
+    <p>Email(*): <input type="email" name="mail" id="mail"></p>
+    <p>Your favorite:</p>
+    <p><input type="checkbox" name="hobbie" value="Shopping" >Shopping</p>
+    <p><input type="checkbox" name="hobbie" value="Tourism" >Tourism</p>
+    <p><input type="checkbox" name="hobbie" value="Chat" >Chat</p>
+    <p><input type="checkbox" name="hobbie" value="Read" >Read a book</p>
+    <p><input type="checkbox" name="hobbie" value="Listening" >Listening to music</p>
+    <p>Your favorite color:</p>
+    <p style="background-color: blue; width: 70px;">
+        <input type="radio" name="color" id="blue" value="Blue" checked>
+        <label for="blue">Blue</label>
+    </p>
+    <p style="background-color: red; width: 70px;">
+        <input type="radio" name="color" id="red" value="Red">
+        <label for="red">Red</label>
+    </p>
+    <p style="background-color: yellow; width: 70px;">
+        <input type="radio" name="color" id="yellow" value="Yellow">
+        <label for="yellow">Yellow</label>
+    </p>
+    <p style="background-color: green; width: 70px;">
+        <input type="radio" name="color" id="green" value="Green">
+        <label for="green">Green</label>
+    </p>
+    <p style="background-color: violet; width: 70px;">
+        <input type="radio" name="color" id="violet" value="Violet">
+        <label for="violet">Violet</label>
+    </p>
+    <p><button type="button" onclick="create_tr(infor)">Sign Up</button>
+        <button type="reset">Reset</button>
+    </p>
+    <table>
+        <thead>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Gender</th>
+            <th>Birthday</th>
+            <th>Hobbies</th>
+            <th>Colors</th>
+        </thead>
+        <tbody id="infor">
+
+        </tbody>
+    </table>
+    <script>
+        create_birthday_control()  
+    </script> 
+    </form>
+</body>
+</html>
+
