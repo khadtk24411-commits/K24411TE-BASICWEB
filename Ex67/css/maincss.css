@@ -1,0 +1,16 @@
+th
+{
+    color: white;
+    background-color: green;
+}
+caption{
+    background-color: yellow;
+     border: 1px solid black;
+}
+table, tr,th,td{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+tbody tr:hover{
+    background-color: yellow;
+}
